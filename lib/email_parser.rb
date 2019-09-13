@@ -1,18 +1,13 @@
 class EmailAddressParser
-@@useful_array=[]
-attr_accessor :emails
+  attr_accessor :emails
 
-def initialize(string)
-@string = string  
-class.emails = parse
+  def initialize(emails)
+    @emails = emails
+  end
 
-end 
-
-def parse 
-@@useful_array<<@string.split(/[\,\s]+/)
-
-end 
-
+  def parse
+    emails.split(/, | /).uniq
+  end
 end
 
 # Build a class EmailParser that accepts a string of unformatted 
