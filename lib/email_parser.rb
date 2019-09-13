@@ -1,9 +1,10 @@
-class EmailParser(string)
+class EmailAddressParser(string)
 
 def parse 
 string.split(/[\,\s]+/)
   
 end 
+
 end
 
 # Build a class EmailParser that accepts a string of unformatted 
