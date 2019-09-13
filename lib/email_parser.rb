@@ -1,4 +1,5 @@
 class EmailAddressParser
+@@useful_array=[]
 attr_accessor :emails
 
 def initialize(string)
@@ -8,7 +9,8 @@ class.emails = parse
 end 
 
 def parse 
-@string.split(/[\,\s]+/)
+@@useful_array<<@string.split(/[\,\s]+/)
+
 end 
 
 end
