@@ -1,11 +1,14 @@
 class EmailAddressParser
-def initialize
-  
-end 
-def parse 
+attr_accessor :emails
 
-string.split(/[\,\s]+/)
-  
+def initialize(string)
+@string = string  
+class.emails = parse
+
+end 
+
+def parse 
+@string.split(/[\,\s]+/)
 end 
 
 end
