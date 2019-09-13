@@ -1,5 +1,5 @@
 class EmailParser(string)
- 
+
 def parse 
 string.split()
   
