@@ -1,6 +1,9 @@
-class EmailAddressParser(string)
-
+class EmailAddressParser
+def initialize
+  
+end 
 def parse 
+
 string.split(/[\,\s]+/)
   
 end 
