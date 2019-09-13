@@ -1,4 +1,9 @@
-
+class EmailParser(string)
+ 
+def parse 
+string.split()
+  
+end 
 
 
 # Build a class EmailParser that accepts a string of unformatted 
